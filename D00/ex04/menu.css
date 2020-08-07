@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu {
+    width: 70%;
+    height: 200px;
+    padding: auto;
+    margin: 10px auto;
+}
+
+.nav-item {
+    text-align: center;
+    color: white;
+    float: left;
+    width: 14%;
+    background-color: #8f8f8f;
+    padding: 20px;
+}
+
+.nav-item li {
+    text-align: left;
+    list-style: none;
+    margin-bottom: 10px;
+    transition: all.3s ease;
+}
+
+.drop-down {
+    margin-top: 20px;
+}
+
+/*.drop-item {
+    background-color: #cb834c;
+}*/
+
+.menu1 {
+    display: none;
+}
+
+.nav-item:hover .menu1 {
+        display: block;
+        transition: all.3s ease;
+}
+
+.nav {
+    width: 70%;
+    list-style: none;
+    margin: 10px auto;
+}

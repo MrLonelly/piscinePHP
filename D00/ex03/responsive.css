@@ -1,0 +1,142 @@
+body {
+			background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2FWnvnJJH_S1Y%2Fmaxresdefault.jpg&f=1&nofb=1");
+			background-size: cover;
+		}
+
+		h1 {
+			text-align: center;
+			text-decoration: underline overline;
+			color: white;
+			margin: 30px 0px;
+		}
+
+		table {
+			margin: 20px auto;
+		}
+
+		table td {
+			width: 10px;
+			height: 10px;
+			/*border: 1px solid black;*/
+			padding: 5px;
+		}
+
+		div {
+			color: #423d3f;
+		}
+
+		.proprieties {
+			font-size: 0.3em;
+		}
+
+		.mass {
+			text-align: right;
+		}
+
+		.number {
+			text-align: left;
+		}
+
+		.title {
+			font-size: 0.7em;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.greenbold {
+			background-color: #3ac93c;
+		}
+
+		.greenlight {
+			background-color: #78ff4f;
+		}
+
+		.orangelight {
+			background-color: #ff8944;
+		}
+
+		.orangedark {
+			background-color: #db5f00;
+		}
+
+		.yellow {
+			background-color: #fff207;
+		}
+
+		.pinklight {
+			background-color: #ff4294;
+		}
+
+		.bluelight {
+			background-color: #0fa7ff;
+		}
+
+		.bluemarin {
+			background-color: #008dce;
+		}
+
+td {
+	width: 10px;
+}
+
+@media only screen and (min-width: 500px) {
+	table td {
+			width: 25px;
+			height: 25px;
+			/*border: 1px solid black;*/
+			padding: 5px;
+		}
+
+		div {
+			color: #423d3f;
+		}
+
+		.proprieties {
+			font-size: 0.5em;
+		}
+
+		.mass {
+			text-align: right;
+		}
+
+		.number {
+			text-align: left;
+		}
+
+		.title {
+			font-size: 1.0em;
+			text-align: center;
+			font-weight: bold;
+		}
+}
+
+@media only screen and (min-width: 768px) {
+	table td {
+			width: 50px;
+			height: 50px;
+			/*border: 1px solid black;*/
+			padding: 5px;
+		}
+
+		div {
+			color: #423d3f;
+		}
+
+		.proprieties {
+			font-size: 0.7em;
+		}
+
+		.mass {
+			text-align: right;
+		}
+
+		.number {
+			text-align: left;
+		}
+
+		.title {
+			font-size: 1.3em;
+			text-align: center;
+			font-weight: bold;
+		}
+}
