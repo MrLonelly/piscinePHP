@@ -1,0 +1,12 @@
+<- Vertex ----------------------------------------------------------------------
+Vertex class to handle vertex points
+
+Constructor:
+Constructor waits 5 elements 2 optionals:
+x, y, z and optional w with Color() class
+
+Vertex public methods:
+
+doc() - Show class documentation if exists
+
+------------------------------------------------------------------------------->
