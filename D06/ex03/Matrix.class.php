@@ -53,6 +53,9 @@ class Matrix
 			$this->_far = $args['far'];
 
 		$this->creatematrix();
+
+		if(self::$verbose)
+			printf("");
 	}
 
 	public function __destruct()
@@ -60,6 +63,24 @@ class Matrix
 		if(self::$verbose)
 			printf("");
 	}
+
+	private function creatematrix()
+	{
+		if($this->_preset = "IDENTITY")
+			$this->_matrix = $this->indentity(1);
+		else if($this->_preset = "SCALE")
+			$this->_matrix = $this->indentity($this->_scale);
+		else if($this->_preset = "RX")
+			$this->_matrix = $this->rx_rotate();
+		else if($this->_preset = "RY")
+			$this->_matrix = $this->ry_rotate();
+		else if($this->_preset = "RZ")
+			$this->_matrix = $this->rz_rotate();
+		else if($this->_preset = "TRANSLATION")
+			$this->_matrix = $this->translate();
+	}
+
+
 }
 
 ?>
