@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+</head>
+<body>
+    <input type="text" placeholder="leftmember" id="left-member">
+    <select name="op" id="op">
+        <option value="0">+</option>
+        <option value="1">-</option>
+        <option value="2">x</option>
+        <option value="3">/</option>
+        <option value="4">%</option>
+    </select>
+    <input type="text" placeholder="rightmember" id="right-member">
+    <button type="button" onclick="calc()">Try me!</button>
+    <p id="respond"></p>
+
+    <script>
+        setInterval(function(){
+            alert('Please, use me...');
+        }, 30000);
+
+        function calc()
+        {
+            let respond = document.getElementById('respond');
+
+            let number1 = Number(document.getElementById('left-member').value);
+            let number2 = Number(document.getElementById('right-member').value);
+
+            let op = document.getElementById('op');
+
+            let selop = op.options[op.selectedIndex].value;
+
+            switch(Number(selop))
+            {
+                case 0:
+                    respond.innerHTML = number1 + number2;
+                    break;
+                case 1:
+                    respond.innerHTML = number1 - number2;
+                    break;
+                case 2:
+                    respond.innerHTML = number1 * number2;
+                    break;
+                case 3:
+                    if(number2 == 0)
+                        respond.innerHTML = "Cannot div with 0";
+                    else
+                        respond.innerHTML = number1 / number2;
+                    break;
+                case 4:
+                    if(number2 == 0)
+                        respond.innerHTML = "Cannot div with 0";
+                    else
+                        respond.innerHTML = number1 % number2;
+                    break;
+            }
+
+            
+        }
+    </script>
+</body>
+</html>

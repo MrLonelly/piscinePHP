@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+</head>
+<style>
+    .card {
+        padding: 20px;
+        font-size: 24px;
+        margin: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .btn {
+        margin: 10px;
+        padding: 8px 16px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        background-color: rgb(81, 245, 81);
+        border: 1px solid rgb(0, 170, 0);
+        color: black;
+    }
+
+</style>
+<body>
+    <h1>TO DO</h1>
+    <button class="btn btn-success" style="float: right;" onclick="addNew()">New</button>
+    <div style="clear: both;"></div>
+    <div id="ft_list">
+
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>

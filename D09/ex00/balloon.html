@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon</title>
+</head>
+<style>
+    #balloon {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div id="balloon" onclick="grow()"></div>
+    <script>
+        document.getElementById('balloon').addEventListener("mouseover", function(){
+            let ball = document.getElementById('balloon');
+            let size = ball.clientHeight;
+            if(size >= 205)
+            {
+                ball.style.width = (size - 5) + "px";
+                ball.style.height = (size - 5) + "px";
+
+                if(ball.style.backgroundColor == "red")
+                    ball.style.backgroundColor = "blue";
+                else if(ball.style.backgroundColor == "green")
+                    ball.style.backgroundColor = "red";
+                else if(ball.style.backgroundColor == "blue")
+                    ball.style.backgroundColor = "green";
+                else
+                    ball.style.backgroundColor = "blue";
+            }
+        });
+
+        document.getElementById('balloon').addEventListener("mouseleave", function(){
+            let ball = document.getElementById('balloon');
+            let size = ball.clientHeight;
+            if(size >= 205)
+            {
+                ball.style.width = (size - 5) + "px";
+                ball.style.height = (size - 5) + "px";
+
+                if(ball.style.backgroundColor == "red")
+                    ball.style.backgroundColor = "blue";
+                else if(ball.style.backgroundColor == "green")
+                    ball.style.backgroundColor = "red";
+                else if(ball.style.backgroundColor == "blue")
+                    ball.style.backgroundColor = "green";
+                else
+                    ball.style.backgroundColor = "blue";
+            }
+        });
+
+        function grow()
+        {
+            let ball = document.getElementById('balloon');
+
+            let size = ball.clientHeight;
+
+            ball.style.width = (size + 10) + "px";
+            ball.style.height = (size + 10) + "px";
+
+            if(ball.style.backgroundColor == "red")
+                ball.style.backgroundColor = "green";
+            else if(ball.style.backgroundColor == "green")
+                ball.style.backgroundColor = "blue";
+            else if(ball.style.backgroundColor == "blue")
+                ball.style.backgroundColor = "red";
+            else
+                ball.style.backgroundColor = "green";
+            
+            if(size + 10 > 420)
+            {
+                ball.style.width = (200) + "px";
+                ball.style.height = (200) + "px";
+                ball.style.backgroundColor = "red";
+            }
+        }
+    </script>
+</body>
+</html>
